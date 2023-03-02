@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 95%;
+  margin: 30px auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 60%;
+  }
+}
+
+.container h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1e1f4b;
+}
+
+.form {
+  background-color: #ecf2ff;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form .input {
+  width: 78%;
+  border: none;
+  outline: none;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+@media (min-width: 570px) {
+  .form .input {
+    width: 85%;
+  }
+}
+
+.container .form svg {
+  background-color: #3e54ac;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+.container .form svg:hover {
+  background-color: #655dbb;
+}
+
+hr {
+  width: 30%;
+  height: 3px;
+  margin: 15px auto;
+  background-color: #bbb;
+  border: none;
+  border-radius: 15px;
+}
+
+.tasks {
+  background-color: #ecf2ff;
+  padding: 20px;
+  border-radius: 8px;
+  padding: 10px 17px;
+  min-height: 30px;
+}
+
+.tasks p {
+  display: flex;
+  justify-content: center;
+  color: #bface2;
+  font-weight: 500;
+}
+
+.tasks .task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+.tasks .task:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.tasks .task .taskText {
+  width: 75%;
+  word-wrap: break-word;
+  font-size: 15px;
+}
+@media (min-width: 570px) {
+  .tasks .task .taskText {
+    font-size: 17px;
+  }
+}
+
+.tasks .task .delete {
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 8px;
+  height: 35px;
+  width: 10%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tasks .task .delete svg {
+  width: 20px;
+}
+
+@media (min-width: 570px) {
+  .tasks .task .delete {
+    width: 7%;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+@media (min-width: 570px) {
+  .footer {
+    justify-content: space-between;
+  }
+}
+
+.footer p {
+  /* margin-right: 5px; */
+  font-weight: 500;
+  color: #655dbb;
+}
+
+.clearAll {
+  background-color: #3e54ac;
+  width: 80px;
+  /* margin: 20px 0 0 auto; */
+  padding: 7px 10px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15 px;
+  cursor: pointer;
+}
