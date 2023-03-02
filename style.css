@@ -105,10 +105,20 @@ hr {
 @media (min-width: 570px) {
   .tasks .task .taskText {
     font-size: 17px;
+    width: 80%;
   }
 }
 
-.tasks .task .delete {
+.tasks .task .editInp {
+  width: 78%;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.tasks .task .delete,
+.tasks .task .edit {
   color: white;
   border: none;
   padding: 5px;
@@ -119,6 +129,20 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.tasks .task .delete:hover,
+.tasks .task .edit:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 .tasks .task .delete svg {
@@ -144,7 +168,6 @@ hr {
 }
 
 .footer p {
-  /* margin-right: 5px; */
   font-weight: 500;
   color: #655dbb;
 }
@@ -152,7 +175,6 @@ hr {
 .clearAll {
   background-color: #3e54ac;
   width: 80px;
-  /* margin: 20px 0 0 auto; */
   padding: 7px 10px;
   border-radius: 8px;
   color: white;
@@ -161,4 +183,17 @@ hr {
   align-items: center;
   font-size: 15 px;
   cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.clearAll:hover {
+  transform: scale(1.07);
+  -webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  -o-transform: scale(1.07);
 }
